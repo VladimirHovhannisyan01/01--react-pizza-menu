@@ -1,48 +1,52 @@
-import React from 'react'
-import Pizza from '../components/Pizza';
-
+import Pizza from "../components/Pizza";
+import focaccia from "../assets/pizzas/focaccia.jpg";
+import margherita from "../assets/pizzas/margherita.jpg";
+import spinaci from "../assets/pizzas/spinaci.jpg";
+import funghi from "../assets/pizzas/funghi.jpg";
+import salamino from "../assets/pizzas/salamino.jpg";
+import prosciutto from "../assets/pizzas/prosciutto.jpg";
 
 const pizzaData = [
   {
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
     price: 6,
-    photoName: "/src/assets/pizzas/focaccia.jpg",
+    photoName: focaccia,
     soldOut: false,
   },
   {
     name: "Pizza Margherita",
     ingredients: "Tomato and mozarella",
     price: 10,
-    photoName: "/src/assets/pizzas/margherita.jpg",
+    photoName: margherita,
     soldOut: false,
   },
   {
     name: "Pizza Spinaci",
     ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
     price: 12,
-    photoName: "/src/assets/pizzas/spinaci.jpg",
+    photoName: spinaci,
     soldOut: false,
   },
   {
     name: "Pizza Funghi",
     ingredients: "Tomato, mozarella, mushrooms, and onion",
     price: 12,
-    photoName: "/src/assets/pizzas/funghi.jpg",
+    photoName: funghi,
     soldOut: false,
   },
   {
     name: "Pizza Salamino",
     ingredients: "Tomato, mozarella, and pepperoni",
     price: 15,
-    photoName: "/src/assets/pizzas/salamino.jpg",
+    photoName: salamino,
     soldOut: true,
   },
   {
     name: "Pizza Prosciutto",
     ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
     price: 18,
-    photoName: "/src/assets/pizzas/prosciutto.jpg",
+    photoName: prosciutto,
     soldOut: false,
   },
 ];
@@ -50,7 +54,7 @@ const pizzaData = [
 
 const Menu = () => {
     const pizzas = pizzaData;
-    const numPizzas = pizzas.length
+    const numPizzas = pizzas.length-0
 
   return (
     <main className='menu'>
